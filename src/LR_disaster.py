@@ -183,7 +183,7 @@ def main():
         
     # --- TFIDF and LOGISTIC REGRESSION ---
   
-    # Extract tdif features
+    # Extract tfdif features
     X_train_features, X_test_features = extract_tfidf(X_train, X_test, 500)
     
     # Train logistic regression classifier

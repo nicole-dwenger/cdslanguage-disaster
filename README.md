@@ -27,7 +27,7 @@ The data, which was used for this project was downloaded from [Kaggle](https://w
 7. Lemmatise tokens
 8. Filter out stop words usig NLTKs english stopwords. 
 
-For both models, the data was split into train and test data using an 70/30 split. 
+Subsequently, for both models the data was split into train and test data using an 70/30 split. 
 
 ### Tfidf Vectorisation and Logistic Regression
 Tfidf (term frequency-inverse document frequency) is a measure of how often a given word occurs in a document, while also taking into account how often it occurs across documents. Thus, after preprocessing, the tweets were transformed into feature spaces using tfidf-vectorisation, while keeping a maximum of 500 features. Subsequently, the logistic regression classifier was trained using default parameters, and evaluated based on predictions of the model for the test data.  
@@ -63,7 +63,7 @@ To use fine-tune this model for the classification of tweets, it was necessary t
 ```
 
 ## Usage 
-**!** The script for the logistic regression classifier (LR_disaster.py) has only been tested on Linux, using Python 3.6.9 (worker02), while the script using Bert has only been tested on Linux using Python 3.7 (UCloud). 
+**!** The script for the logistic regression classifier (LR_disaster.py) has only been tested on Linux, using Python 3.6.9 (worker02), while the script using Bert has only been tested on Linux using Python 3.7.3. (UCloud). 
 
 ### 1. Cloning the Repository and Installing Dependencies
 To run the scripts in this repository, I recommend cloning this repository and installing necessary dependencies in a virtual environment. The bash script `create_venv.sh` can be used to create a virtual environment called `venv_disaster` with all necessary dependencies, listed in the `requirements.txt` file. The following commands can be used:
