@@ -6,7 +6,7 @@
 ## Description
 > This is the self-assigned project of the course Language Analytics. 
 
-This is the self-assigned project. Twitter has become an important platform to monitor and detect emergency situations. However, tweets about disasters can be quite similar to those which share similar words, but have a different meaning. *The sun is on fire!* could refer to a beautiful sunset, while *The church is on fire* would refer to an emergency. Thus, it is relevant to be able to distinguish between tweets which refer to a true disaster, and those which do not.
+This is the self-assigned project. Twitter has become an important platform to monitor and detect emergency situations. However, tweets about disasters can be quite similar to those which share similar words, but have a different meaning. *The sun is on fire!* could refer to a beautiful sunset, while *The church is on fire!* would refer to an emergency. Thus, it is relevant to be able to distinguish between tweets which refer to a true disaster, and those which do not.
 The aim of this project was to use two different methods to solve this binary classification task of classifying tweets to refer to a true disaster or not: (1) using tfidf-feature extraction and a logistic regression classifier and (2) using transfer learning by fine-tuning the pre-trained transformer model Bert. Thus, this repository contains two scripts, one for each method, which preprocesses the data, trains and evaluates each of the classifiers. 
 
 
