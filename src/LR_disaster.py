@@ -39,6 +39,8 @@ demoji.download_codes()
 
 # NLTK for stopwords and lemmatisation
 import nltk 
+nltk.download('punkt')
+nltk.download('wordnet')
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 stop_words = stopwords.words('english')
