@@ -21,10 +21,11 @@ The data, which was used for this project was downloaded from [Kaggle](https://w
 4. Remove URLs
 
 **Only** for the logistic regression classifier the following steps were also performed (they were not performed for Bert, since it seemed relevant to keep all context words and not remove any words):
-6. Remove punctuation
-7. Lower tokens
-8. Lemmatise tokens
-9. Filter out stop words usig NLTKs english stopwords. 
+
+5. Remove punctuation
+6. Lower tokens
+7. Lemmatise tokens
+8. Filter out stop words usig NLTKs english stopwords. 
 
 For both models, the data was split into train and test data using an 70/30 split. 
 
