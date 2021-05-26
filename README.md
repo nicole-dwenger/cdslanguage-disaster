@@ -16,15 +16,15 @@ The aim of this project was to use two different methods to solve this binary cl
 The data, which was used for this project was downloaded from [Kaggle](https://www.kaggle.com/c/nlp-getting-started/data), where it was published for a Kaggle competition. Only the train.csv  file was used, as the test.csv file did not contain any labels. This data contained 7613 tweets, 4341 tweets tagged as 0 (no disaster) and 3271 tagged with 1 (disaster). For this project, 3000 tweets of each label (0,1) were sampled, leading to a total of 6000 tweets. For both, the logistic regression classifier and Bert, the tweets were preprocessed using the following steps: 
 
 1. Remove emojis. They also have been replaced with their descriptions, but I chose to remove them to only focus on the text. However, they could potentially also help to distinguish between disaster/no disaster. 
-2. Remove digits and their appendencies, e.g. 40ms
+2. Remove digits and their appendencies, e.g. 40ms.
 3. Remove mentiones, i.e. @...
-4. Remove URLs
+4. Remove URLs.
 
 **Only** for the logistic regression classifier the following steps were also performed (they were not performed for Bert, since it seemed relevant to keep all context words and not remove any words):
 
-5. Remove punctuation
-6. Lower tokens
-7. Lemmatise tokens
+5. Remove punctuation.
+6. Lower tokens.
+7. Lemmatise tokens.
 8. Filter out stop words usig NLTKs english stopwords. 
 
 Subsequently, for both models the data was split into train and test data using an 70/30 split. 
