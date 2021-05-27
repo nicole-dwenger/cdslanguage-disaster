@@ -207,8 +207,8 @@ def get_prediction_labels(model, test_encoded):
     predictions = model.predict(test_encoded, batch_size=32)
     # Extract logits from predictions
     logits = predictions["logits"]
-    # Get max to get true labels
-    pred_labels = np.argmax(logits, axis = 1)
+    # Get max to get predicted label
+    pred_labels = np.argmax(logits, axis=1)
 
     return pred_labels
 
