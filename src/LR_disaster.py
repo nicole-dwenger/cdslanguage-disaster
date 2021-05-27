@@ -114,7 +114,7 @@ def split_data(data, test_size):
     X = data["cleaned"].values
     y = data["target"].values
     
-    # Split into test and train
+    # Split into test and train, stratify to have balanced data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, stratify=y)
     
     return X_train, X_test, y_train, y_test
@@ -175,7 +175,7 @@ def main():
     # Select 3000 for each target, for balanced data
     data = data.groupby("target").sample(3000, random_state=1)
     
-    # Clean tweets 
+    # Clean tweets by applying function to text in each row
     data["cleaned"] = data.apply(lambda row : clean_tweets_advanced(row['text']), axis = 1)
     
     # Get test and train texts (X) and labels (y)
